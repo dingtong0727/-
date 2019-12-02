@@ -1,0 +1,91 @@
+<!--pages/search/search.wxml-->
+<!-- 自定义的导航栏 -->
+<view class="custom">
+  <view class="top">
+  <!-- <navigator url='/pages/home/home'> -->
+  <view class='back-img' bindtap = 'back1'>
+     <image src='./img/back.jpg'></image>
+  </view>
+  <!-- </navigator> -->
+     <text>搜索</text>
+  </view>
+   <!-- 搜索框 -->
+  <view class='navInput'>
+    <image class="search"  src='../home/img/search.jpg'></image>
+    <image class="search2"  src='./img/x.jpg'  style="display:block"></image>
+    <input placeholder='搜你想搜' placeholder-class='none' placeholder-style='color:#999999FF;font-size:26rpx;'></input> 
+     <view class="txt">搜索</view>
+  </view>
+</view>
+<!--------------end--------------- -->
+<!-- 历史搜索 -->
+<!-- <view class="hot-search2"> 
+      <view class="tou2">
+           <text> 历史搜索</text>
+           <image src='./img/del2.png' bindtap = 'alldel'></image>
+      </view>
+      <view class="hot-list2">
+          <view class="list_item2">
+               阿玛尼
+          </view>
+          <view class="list_item2">
+               宾利手表
+          </view>
+          <view class="list_item2">
+                香奈儿
+          </view>        
+      </view>
+</view> -->
+<!-- 历史搜索end -->
+<!-- 热门搜索 -->
+<!-- <view class="hot-search"> 
+      <view class="tou">
+           <text> 热门搜索</text>
+           <image src='./img/hot2.png'></image>
+      </view>
+      <view class="hot-list">
+          <view class="list_item">
+               阿玛尼
+          </view>
+          <view class="list_item">
+               宾利手表
+          </view>
+          <view class="list_item">
+                宾利手表
+          </view>
+          <view class="list_item">
+                电视
+          </view>       
+      </view>
+</view> -->
+<!-- 热门搜素end -->
+<!-- 搜索后的商品列表 -->
+<view class='list'>
+  <view class="daohang">
+      <view class="txt">默认</view>
+      <view class="txt">销量</view>  
+      <view class="txt">价格</view>    
+  </view>
+  <block wx:for='{{dataList}}' wx:key='list' wx:for-item="item">
+  <view class="list_item">
+      <navigator url='/pages/details/details?id={{item.goods_id}}'>
+      <view class='img'>
+        <image src="{{imghref}}{{item.goods_img}}"  mode="scaleToFill"/>
+      </view>
+      <view class='info'>
+        <view class='title'>{{item.goods_title}}</view>
+        <view class='clas'>红酒</view>
+        <view class='mg'>
+               <image src="../home/img/juan.png">"></image> 
+        </view>
+        <view class='price'>￥{{item.goods_price}}</view>
+        <view class='num'>原价￥{{item.goods_xiaoliang}}</view>
+      </view>
+       </navigator>
+      <view class='clear'></view>
+  </view>
+  </block>
+</view>
+<!-- end -->
+
+

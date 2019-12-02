@@ -1,0 +1,58 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/search/search",
+    "pages/logs/logs",
+    "pages/classify/classify", 
+    "pages/find/find", 
+    "pages/gwc/gwc", 
+    "pages/my/my",
+    "pages/details/details",
+    "pages/index/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#DD1205",
+    "navigationBarTitleText": "沃链商城",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+  "color": "#a9b7b7",
+  "selectedColor": "#E52906",
+  "borderStyle": "white",
+  "list": [
+    {
+      "pagePath": "pages/home/home",
+      "text": "首页",
+      "iconPath": "img/tabbar/tabbar5.jpg",
+      "selectedIconPath": "img/tabbar/tabbar5.jpg"
+    },
+    {
+      "pagePath": "pages/classify/classify",
+      "text": "分类",
+      "iconPath": "img/tabbar/tabbar1.jpg",
+      "selectedIconPath": "img/tabbar/fl2.jpg"
+    },
+    {
+      "pagePath": "pages/find/find",
+      "text": "发现",
+      "iconPath": "img/tabbar/tabbar2.jpg",
+      "selectedIconPath": "img/tabbar/tabbar2.jpg"
+    },
+    {
+      "pagePath": "pages/gwc/gwc",
+      "text": "购物车",
+      "iconPath": "img/tabbar/tabbar3.jpg",
+      "selectedIconPath": "img/tabbar/tabbar3.jpg"
+    },
+    {
+      "pagePath": "pages/my/my",
+        "text": "我的",
+      "iconPath": "img/tabbar/tabbar4.jpg",
+      "selectedIconPath": "img/tabbar/tabbar4.jpg"
+    }
+  ]
+},
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

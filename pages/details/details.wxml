@@ -1,0 +1,5 @@
+<!--pages/details/details.wxml-->
+<view>
+<text>我是详情页{{data.goods_id}}</text>
+
+</view>

@@ -1,0 +1,234 @@
+/* pages/home/home.wxss */
+page{
+   background-color: #F2F2F2;
+}
+.search{  
+    width: 80%;  
+}  
+.search_arr input{  
+    margin-left: 60rpx;  
+    height: 60rpx;  
+    border-radius: 5px;  
+}  
+.bc_text {  
+    line-height: 68rpx;  
+    height: 68rpx;  
+    margin-top: 34rpx;  
+}  
+.page_row{
+    width: 100%;
+    height: 50px;  
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around; 
+    background-color: #FF430C;
+    position: fixed;
+    top: 0rpx;
+    z-index:3;
+
+}  
+.input{
+    width:343px; 
+    height: 30px;
+    background-color:#FFFFFF;
+    border-radius: 15px;
+    color: #999999;
+    font-size: 12px;
+    margin-top: 10px;
+    line-height: 30px;
+}
+ .input>text{
+     margin-left: 35px;
+ }
+.sear1{
+    width: 16px;
+    height:16px;
+    position: absolute;  
+    top: 16px;
+    left:28px;  
+}  
+.sear{
+     width: 16px;
+     height:16px;
+}
+.lun{
+    height:138px;
+    width: 100%;
+    /* background-color: pink; */
+}
+.lunbo2{
+    height:100%;
+    width: 343px;
+    border-radius: 12px;
+    margin: 0 auto;
+    margin-top: 50px;
+    /* background-color: hotpink; */
+}
+.banner-image {
+    display: block;
+    height:100%;
+    width: 100%;
+    margin: auto;
+    border-radius: 12px;
+}
+.ten{
+    height:180px;
+    width: 100%; 
+    /* background-color: pink; */
+    margin-top: 12px;
+}
+.box{
+    height:100%;
+    width:340px; 
+    /* background-color: pink; */
+    margin: 0 auto;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+   }
+.little-box{
+    height:64px;
+    width:40px; 
+    margin-left:35px; 
+    margin-top: 16px;
+}
+
+.little-box:nth-of-type(1),
+.little-box:nth-of-type(6){
+     margin-left:0; 
+}   
+.little-box image{
+    height:40px;
+    width:40px; 
+} 
+.little-box .text{
+    height:16px;
+    width: 100%;
+    /*background-color: plum; */
+    line-height: 16px;
+    font-size:10px;
+    margin-top: 4px;
+    color:#292929;
+    font-weight:600;
+}    
+.list{
+     width:343px;
+     /* height:595px; */
+     background:#FFFFFF;
+     margin: 0 auto;
+     border-radius: 12px;
+}
+/* --------------start-------------------- */
+.topnavFixed{
+     position:fixed;
+     width:91.5%;
+     height:35px; 
+     line-height: 35px;
+     top: 50px;
+     background:white;
+     z-index: 3;
+}
+
+.topnavAbsolute{
+     border-top-left-radius:12px;
+     border-top-right-radius:12px;
+     width:100%;
+     height:35px; 
+     line-height: 35px;
+     /* background:plum; */
+     z-index: 3;
+}       
+.list>.topnavAbsolute>text,
+.list>.topnavFixed>text
+{
+        width:56px;
+        height:20px;
+        /* background-color: hotpink; */
+        margin-left:24px;
+        font-size:14px;
+        font-weight:400;
+        color:#292929;
+}
+
+.list>.topnavAbsolute>text:nth-of-type(1),
+.list>.topnavFixed>text:nth-of-type(1)
+{
+      margin-left:11px;  
+}
+/* ----------------end------------------ */
+.list-box{
+      width: 100%;
+      display: flex;
+      flex-wrap:wrap;
+      justify-content: space-around;
+      
+}
+.list-box>.list_item{
+      width:152px;
+      height:213px;
+      background-color:#F8F8F8FF;
+      border-radius:4px;
+      margin-top: 16px;
+}   
+.list-img{
+      width:100%;
+      height:126px;
+      /* background-color:plum; */
+      border-top-left-radius:4px;
+      border-top-right-radius: 4px;
+}
+.list-img>.list-img1{
+      width:100%;
+      height:100%;
+      border-top-left-radius:4px;
+      border-top-right-radius: 4px;
+}
+.list-jieshao{
+    background-color:#F8F8F8FF;
+}
+.trade-name{
+    height:27px;  
+    /* background-color:plum; */
+    margin-left: 6px;
+    font-size:13px; 
+    font-weight:500;
+    color:#292929FF;
+    line-height:27px;   
+}
+.list-img2{
+      height:18px;  
+      margin-left: 6px;
+}
+.list-img2>image{
+      height:18px; 
+      width: 86px;
+
+}
+.current-price{
+      height:24px; 
+      /* background-color:plum; */
+      margin-left: 6px;
+}
+.current-price>text:nth-of-type(1){
+      color: #D30202FF;
+      font-size:18px;
+      font-weight:600;
+}
+.current-price>text:nth-of-type(2){
+      color: #D30202FF;
+      font-size:9px;
+}
+.orig-price{
+       height:15px; 
+       /* background-color:plum; */
+       font-size: 8px;
+       color: #999999FF;
+       display: flex;
+       justify-content: space-between;
+}
+.orig-price>text:nth-of-type(1){
+     margin-left: 6px;
+}
+.orig-price>text:nth-of-type(2){
+     margin-right: 6px;
+}
